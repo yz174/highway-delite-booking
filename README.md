@@ -2,7 +2,7 @@
 
 A fullstack travel experience booking application built with React, TypeScript, Node.js, Express, and PostgreSQL. Users can browse travel experiences, view available time slots, make bookings with promo codes, and receive booking confirmations.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Project Structure](#project-structure)
@@ -17,7 +17,7 @@ A fullstack travel experience booking application built with React, TypeScript, 
 - [Testing](#testing)
 - [Troubleshooting](#troubleshooting)
 
-## ✨ Features
+##  Features
 
 - **Browse Experiences**: View a catalog of travel experiences with images, descriptions, and pricing
 - **Search Functionality**: Filter experiences by name or location
@@ -29,7 +29,7 @@ A fullstack travel experience booking application built with React, TypeScript, 
 - **Responsive Design**: Mobile-first design that works on all devices
 - **Form Validation**: Real-time validation for user inputs
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 highway-delite/
@@ -60,7 +60,7 @@ highway-delite/
 └── README.md
 ```
 
-## 🔧 Prerequisites
+##  Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -77,7 +77,7 @@ npm --version     # Should be 8 or higher
 psql --version    # Should be 14 or higher
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 For a quick setup, follow these steps:
 
@@ -106,7 +106,7 @@ npm run dev
 # Backend: http://localhost:3000
 ```
 
-## 📖 Detailed Setup Instructions
+##  Detailed Setup Instructions
 
 ### Backend Setup
 
@@ -217,7 +217,7 @@ The frontend will start on `http://localhost:5173`. You should see:
   ➜  Local:   http://localhost:5173/
 ```
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 ### Backend (.env)
 
@@ -243,7 +243,7 @@ postgresql://postgres:mypassword@localhost:5432/highway_delite?schema=public
 |----------|-------------|---------|----------|
 | `VITE_API_URL` | Backend API base URL | http://localhost:3000/api | Yes |
 
-## 🗄️ Database Setup
+##  Database Setup
 
 ### Creating the Database
 
@@ -297,7 +297,7 @@ The seed script (`prisma/seed.ts`) populates the database with:
 - `SAVE10` - 10% discount
 - `FLAT100` - ₹100 flat discount
 
-## 🏃 Running the Application
+##  Running the Application
 
 ### Development Mode
 
@@ -545,7 +545,7 @@ POST /api/promo/validate
 | Prisma | ORM | 6.x |
 | CORS | Cross-origin requests | 2.x |
 
-## 🧪 Testing
+##  Testing
 
 ### Manual Testing
 
@@ -580,7 +580,7 @@ npx ts-node test-concurrent-bookings.ts
 
 **Note**: Ensure backend server is running before executing tests.
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -647,20 +647,3 @@ cd backend
 npm run prisma:seed
 ```
 
-### Getting Help
-
-If you encounter issues:
-
-1. Check the error message carefully
-2. Verify all environment variables are set correctly
-3. Ensure all dependencies are installed
-4. Check that PostgreSQL is running
-5. Review the console logs for both frontend and backend
-
-## 📝 License
-
-This project is for educational purposes.
-
-## 👥 Contributing
-
-This is a demonstration project. For improvements or bug fixes, please follow standard Git workflow practices.
