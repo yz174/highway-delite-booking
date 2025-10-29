@@ -45,7 +45,7 @@ async function main() {
       location: 'Udupi, Karnataka',
       description: 'Curated small-group experience. Certified guide. Safety briefing.',
       about: 'Experience the thrill of kayaking through scenic routes with trained guides. Includes safety briefing, equipment, and refreshments.',
-      imageUrl: 'http://localhost:3000/images/kayaking.png',
+      imageUrl: '/kayaking.png',
       price: 999,
     },
     {
@@ -53,7 +53,7 @@ async function main() {
       location: 'Nandi Hills, Karnataka',
       description: 'Early morning trek to witness breathtaking sunrise views. Guided tour with breakfast.',
       about: 'Start your day with a magical sunrise at Nandi Hills. Includes guided trek, photography spots, and traditional breakfast.',
-      imageUrl: 'http://localhost:3000/images/nandi hills.png',
+      imageUrl: '/nandi hills.png',
       price: 799,
     },
     {
@@ -61,7 +61,7 @@ async function main() {
       location: 'Coorg, Karnataka',
       description: 'Explore coffee plantations and learn about coffee making. Includes tasting session.',
       about: 'Walk through lush coffee estates, learn the art of coffee making from bean to cup, and enjoy fresh coffee tasting.',
-      imageUrl: 'http://localhost:3000/images/coffee trail.png',
+      imageUrl: '/coffee trail.png',
       price: 1299,
     },
     {
@@ -69,7 +69,7 @@ async function main() {
       location: 'Mandovi River, Goa',
       description: 'Relaxing sunset cruise with live music and dinner. Perfect for families and couples.',
       about: 'Enjoy a serene evening on the Mandovi River with live entertainment, delicious dinner, and stunning sunset views.',
-      imageUrl: 'http://localhost:3000/images/boat cruise.png',
+      imageUrl: '/boat cruise.png',
       price: 1499,
     },
     {
@@ -77,7 +77,7 @@ async function main() {
       location: 'Rishikesh, Uttarakhand',
       description: 'Adrenaline-pumping bungee jump from 83 meters. Safety certified and experienced crew.',
       about: 'Take the leap of faith with India\'s highest bungee jump. Includes safety gear, training, and video recording of your jump.',
-      imageUrl: 'http://localhost:3000/images/bungee jumping.png',
+      imageUrl: '/bungee jumping.png',
       price: 3500,
     },
   ];
