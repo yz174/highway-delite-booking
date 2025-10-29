@@ -11,27 +11,14 @@ dotenv.config();
 
 const app = express();
 
-// CORS Middleware - must be first
+// CORS Middleware - allow all origins for now
 app.use((req, res, next) => {
-  const allowedOrigins = process.env.FRONTEND_URL
-    ? process.env.FRONTEND_URL.split(",")
-    : ["*"];
-
-  const origin = req.headers.origin;
-
-  if (
-    allowedOrigins.includes("*") ||
-    (origin && allowedOrigins.includes(origin))
-  ) {
-    res.setHeader("Access-Control-Allow-Origin", origin || "*");
-  }
-
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET, POST, PUT, DELETE, OPTIONS"
   );
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
 
   // Handle preflight
   if (req.method === "OPTIONS") {
@@ -41,14 +28,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL
-      ? process.env.FRONTEND_URL.split(",")
-      : "*",
-    credentials: true,
-  })
-);
 app.use(express.json());
 
 // Serve static files from public directory
