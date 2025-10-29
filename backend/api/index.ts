@@ -21,6 +21,20 @@ app.use(express.json());
 // Serve static files from public directory
 app.use('/images', express.static(path.join(__dirname, '../public/images')));
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({ 
+    status: 'ok', 
+    message: 'Highway Delite API',
+    endpoints: {
+      health: '/health',
+      experiences: '/api/experiences',
+      bookings: '/api/bookings',
+      promo: '/api/promo'
+    }
+  });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });
